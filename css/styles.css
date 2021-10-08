@@ -7989,8 +7989,11 @@ form .row:first-child .floating-label-form-group{
   padding-left: 50px;
 }
 .overview{
- margin-bottom: 2em;
+ margin-bottom: 1em;
   text-transform: uppercase;
+}
+.overview_paragraph{
+  text-align: justify;
 }
 p{
  display: block;
