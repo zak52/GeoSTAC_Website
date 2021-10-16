@@ -8099,4 +8099,6 @@ form .row:first-child .floating-label-form-group{
 .description {
   width: 95%;
   font-size: 14px;
+  text-align: left;
+  display: block;
 }
