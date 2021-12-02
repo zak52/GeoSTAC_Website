@@ -404,29 +404,58 @@ pre code{
 }
 .container{
  width:100%;
- padding-right:1.5rem;
- padding-left:1.5rem;
+ padding-right:15px;
+ padding-left:15px;
  margin-right:auto;
- margin-left:1rem;
+ margin-left:auto;
 }
 @media (min-width:576px){
  .container{
    max-width:540px
+ }
+ .tab{
+   margin-left: 13%;
+ }
+ .requirements-text{
+   margin-left: 13%;
+   font-size: .95em;
  }
 }
 @media (min-width:768px){
  .container{
    max-width:720px
  }
+
+ .tab{
+   margin-left: 27%;
+ }
+ .requirements-text{
+   margin-left: 27%;
+   font-size: .95em;
+ }
 }
 @media (min-width:992px){
  .container{
    max-width:960px
  }
+
+ .tab{
+   margin-left: 34%;
+ }
+ .requirements-text{
+   margin-left: 34%;
+ }
 }
 @media (min-width:1200px){
  .container{
    max-width:1140px
+ }
+
+ .tab{
+   margin-left: 34%;
+ }
+ .requirements-text{
+   margin-left: 34%;
  }
 }
 .container-fluid,.container-lg,.container-md,.container-sm,.container-xl{
@@ -7710,7 +7739,9 @@ a.text-dark:focus,a.text-dark:hover{
  }
 }
 .page-section{
- padding:2rem 0
+ padding:2rem 0rem;
+ padding-left: 2em;
+ padding-right: 1em;
 }
 .page-section .page-section-heading{
  font-size:2rem;
@@ -7986,7 +8017,7 @@ form .row:first-child .floating-label-form-group{
 }
 #content{
  float: center;
-  width: 790px;
+  width: 100%;
   padding-left: 50px;
 }
 .overview{
@@ -7995,7 +8026,6 @@ form .row:first-child .floating-label-form-group{
 }
 .overview_paragraph {
   margin-block-start:1em;
-  text-align: justify;
   margin-block-end: 1em;
   margin-inline-start: 0px;
   margin-inline-end: 0px;
@@ -8010,92 +8040,243 @@ form .row:first-child .floating-label-form-group{
   font-size: 2em;
   color:#0d8c19;
   margin-bottom: -2em;
-  padding: 0;
+  padding: 1em;
   diplay:block;
   margin-block-start: 0.1em;
   margin-block-end: 0.1em;
   margin-inline-start: 0px;
   margin-inline-end: 0px;
 }
+
 .text{
  margin-left:40px
 }
 
-
-.grid-container {
-  display: grid;
-  grid-template-columns: auto;
-  grid-gap: 10px;
-  padding: 20px;
+.teamMember{
+  margin-top: 10px;
+  background-color: #1a252f;
+  margin-bottom: 10px;
+  box-sizing: border-box;
+  display: block;
 }
 
-.grid-container > div {
-  background-color:#ffffff;
+.memberPhoto{
   text-align: center;
-  font-size: 20px;
-}
-
-.column1{
-  grid-column-start: 0;
-  grid-column-end: 1;
-}
-
-.column2{
-  grid-column-start: 1;
-  grid-column-end: 2;
-}
-.column3{
-  grid-column-start: 2;
-  grid-column-end: 3;
-}
-.column4 {
-  grid-column-start: 3;
-  grid-column-end: 4;
-}
-
-.grid-container > img{
+  box-sizing: border-box;
   display: block;
-  margin-left: auto;
-  margin-right: auto;
-  height: 250px;
-  width: 250px;
 }
 
-.grid-container  > p{
+.memberPhoto{
+  overflow: hidden;
+  position: relative;
+  box-sizing: border-box;
   display: block;
-  margin-left: auto;
-  margin-right: auto;
-  width: 50%;
-  color: black;
-  font-size: 18px;
-  line-height: 25px;
-  padding-bottom: 10px;
+}
+
+.memberPhoto img{
+  vertical-align: middle;
+  border-style: none;
+  box-sizing: border-box;
+}
+
+.memberData{
+  box-sizing: border-box;
+  display: block;
+  padding: 15px;
+}
+
+h4{
+  font-weight: 400;
+  color: #FFFFFF;
+  font-size: 1.5rem;
+  line-height: 1.2;
+  display: block;
+  margin-block-start: 1.33em;
+  margin-block-end: 1.33em;
+  margin-inline-start: 0px;
+  margin-inline-end:0px;
+  box-sizing: border-box;
+}
+
+.memberData span {
+  font-size: 12px;
+  color: #FFFFFF;
+  box-sizing: border-box;
+}
+
+.memberData p {
+  margin-top: 0;
+  color: #FFFFFF;
+  margin-bottom: 1rem;
+  box-sizing: border-box;
+  display: block;
   margin-block-start: 1em;
   margin-block-end: 1em;
   margin-inline-start: 0px;
   margin-inline-end: 0px;
 }
 
-.grid-container > h2{
+.section {
+  padding: 100px 0;
   display: block;
-  margin-left: auto;
-  margin-right: auto;
-  width: 25%;
-  font-family: serif;
-  font-size: 10px;
-  padding-bottom: 20px;
-  font-weight: bold;
-  text-align: left;
-  position: relative;
-  margin-block-start: 0.83em;
-  margin-block-end: 0.83em;
-  margin-inline-start: 0px;
-  margin-inline-end: 0px;
+  box-sizing: border-box;
 }
 
-.description {
-  width: 95%;
-  font-size: 14px;
-  text-align: left;
-  display: block;
+.md-layout-item.md-small-size-70 {
+  min-width: 70%;
+  max-width: 70%;
+  flex: 0 1 70%;
+}
+
+.md-layout-item.md-size-50 {
+  min-width: 50%;
+  max-width: 50%;
+  flex: 0 1 50%;
+}
+
+.md-layout-item {
+  padding-right: 15px;
+  padding-left: 15px;
+}
+
+.md-layout-item {
+  flex: 1 1;
+}
+
+.md-layout {
+margin-right: -15px;
+margin-left: -15px;
+}
+
+.md-layout {
+display: flex;
+flex-wrap: wrap;
+}
+
+.leaflet-picture{
+  vertical-align: middle;
+  max-height: 450px;
+  max-width: 100%;
+}
+
+.img-frame{
+  height: 450px;
+  width: 100%;
+  white-space: nowrap;
+  text-align: center;
+}
+
+.bar-black{
+	color:#fff!important;
+	background-color:#000!important;
+}
+
+.bar-black{
+	width:100%;
+	overflow:hidden;
+}
+
+.bar-black{
+	display:inline-block;
+	width:auto;
+}
+
+.bar-black .bar-item{
+	padding:8px 16px;
+	float:left;
+	width:auto;
+	border:none;
+	display:block;
+	outline:0;
+}
+
+.bar-black{
+	position:static;
+	float:left;
+}
+
+.bar-black .geo-button{
+	white-space:normal;
+}
+
+.bar-black:before, .bar-black:after{
+	content:"";
+	display:table;
+	clear:both;
+}
+
+.bar-item{
+	width:100%;
+	display:block;
+	padding:8px 16px;
+	text-align:left;
+	border:none;
+	white-space:normal;
+	float:none;
+	outline:0;
+}
+
+.bar-item{
+	text-align:center;
+}
+
+.bar-item{
+  text-align:center;
+}
+
+.geo-button{
+	white-space:normal;
+}
+
+.geo-button{
+  width:100%;
+}
+
+.geo-button:hover{
+	color:#000!important;
+	background-color:#ccc!important
+}
+
+.geo-button{
+	border:none;
+	display:inline-block;
+	padding:8px 16px;
+	vertical-align:middle;
+	overflow:hidden;
+	text-decoration:none;
+	color:inherit;
+	background-color:inherit;
+	text-align:center;
+	cursor:pointer;
+	white-space:nowrap
+}
+
+.geo-button{
+	-webkit-touch-callout:none;
+	-webkit-user-select:none;
+	-khtml-user-select:none;
+	-moz-user-select:none;
+	-ms-user-select:none;
+	user-select:none
+}
+
+.geo-button:disabled{
+	cursor:not-allowed;
+	opacity:0.3
+}
+
+.geo-button:first-child, .geo-button:first-child{
+	background-color:#ccc;
+	color:#000
+}
+
+.color-red,.color-hover-red:hover{
+	color:#fff!important;
+	background-color:#f44336!important
+}
+
+.gantt-picture{
+  vertical-align: middle;
+  max-height: 500px;
+  max-width: 100%;
 }
