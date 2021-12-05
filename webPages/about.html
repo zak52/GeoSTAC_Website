@@ -38,31 +38,255 @@
         </div>
     </nav>
 	<header class="masthead text-white text-center"
-      style="background:url('../assets/marsPlanet.jpg'); background-repeat: no-repeat; background-position: center; background-size: cover;>
-        <div class="container d-flex align-items-center flex-column">
-            <!-- Masthead Avatar Image--><img class="masthead-avatar mb-5" src="../assets/GeoSTAC_logo-removebg.png">
-            <!-- Masthead Heading-->
-            <h1 class="masthead-heading mb-0">About</h1>
-            <div class="divider-custom divider-light">
-              <div class="divider-custom-line"></div>
-              <div class="divider-custom-icon"><i class="fas fa-star"></i></div>
-              <div class="divider-custom-line"></div>
-            </div>
-            <p class="pre-wrap masthead-subheading font-weight-light mb-0">Our Mission</p>
+  style="background:url('../assets/Europa.jpg'); background-repeat: no-repeat; background-position: center; background-size: cover;">
+  <div class="container d-flex align-items-center flex-column">
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <!-- Masthead Heading-->
+        <h1 class="masthead-heading mb-0">About the Project</h1>
+        <div class="divider-custom divider-light">
+          <div class="divider-custom-line"></div>
+          <div class="divider-custom-icon"><i class="fas fa-star"></i></div>
+          <div class="divider-custom-line"></div>
         </div>
+    </div>
     </header>
     <section class="page-section  text-black mb-0 bg-secondary" id="problem">
         <div style="margin: 0px auto; position: relative; overflow: hidden;
         padding: 1em" >
           <div id="content">
             <div>
-              <h2 class="overview">
-                Making Planetary Data Accessible
+              <h2 class="overview" style="text-align: center;">
+                Introduction
               </h2>
-              <p class="overview_paragraph">
-                  Our mission is to make planetary data more accessible.  We have a collection of <u title="SpatioTemporal Asset Catalog">STAC</u> images, and we would like to make it easy for anyone who needs it to use this data.  We are working on a web portal where users can browse through a map, highlight an area of interest, and view the relevant data images right in their web browser.
-              </p>
+              <div class="divider-custom divider-secondary">
+                <div class="divider-custom-line"></div>
+              </div>
+              <div class="md-layout">
+                <div class="md-layout-item md-size-50 md-small-size-70 md-xsmall-size-100"
+                style="text-align:left;">
+                    <p>
+                      &emsp; As space exploration increases among both federal agencies
+                      and private civilians, there is a need for community access
+                      to accurate planetary maps and data. Mars is a target for
+                      exploration due to the proximity to Earth inside of our
+                      solar system. In order to plan this next exploration, it is
+                      vital that scientists use the data and images that our
+                      satellites and non-human space missions have gathered.
+                      <br>
+                      <br>
+                      &emsp; Our clients Trent Hare and Dr. Jay Laura of
+                      work for the United States Geological Survey (USGS)
+                      Astrogeology Science Center (ASC) in Flagstaff Arizona.
+                      The ASC also develops software for scientific and
+                      cartographic analysis of planetary data. The ASC also
+                      provides the community with cartographic products and
+                      archiving data. Finally ASC distributes planetary data to
+                      the international scientific community.
+                      <br>
+                      <br>
+                      &emsp; The planetary data and cartographic products are
+                      very important for the furture of space exploration. Without
+                      these tools it would be increasingly more difficult to plane
+                      human space exploration missions.
+                    </p>
+                </div>
+                <div class = "md-layout-item md-size-50 md-xsmall-size-100
+                leaflet-picture img-frame">
+                  <img src = "../assets/cartocosmos.png" class="leaflet-picture">
+                </div>
+              </div>
+              <br>
+              <br>
             </div>
+        </div>
+        <div class ="content">
+          <h2 class="overview" style="text-align: center;">
+            Details
+          </h2>
+          <div class="divider-custom divider-secondary">
+            <div class="divider-custom-line"></div>
+          </div>
+        </div>
+        <center class="tab">
+          <div class = "bar-black text-center">
+            <button class = "bar-item geo-button tabLink color-red"
+            onclick="openSection(event, 'problem')">
+            Problem
+            </button>
+            <button class = "bar-item geo-button tabLink"
+            onclick="openSection(event, 'solution')">
+            Solution
+            </button>
+            <button class = "bar-item geo-button tabLink"
+            onclick="openSection(event, 'requirements')">
+            Requirements
+            </button>
+            <button class = "bar-item geo-button tabLink"
+            onclick="openSection(event, 'technologies')">
+            Technologies
+            </button>
+          </div>
+        </center>
+        <div id = "problem" class = "detail-section" style = "">
+          <div class = "md-layout">
+            <br>
+            <br>
+            <div class="md-layout-item md-size-50 md-small-size-70 md-xsmall-size-100"
+            style="text-align:left;">
+                <p>
+                  <p>
+                    &emsp; The USGS Astrogeology Science Center serves data using
+                    a community developed standard to the planetary science
+                    community to access Analysis Ready Data (ARD). ARD are data
+                    that has already been processed through the complex imaging
+                    software at USGS. This significantly reduces the magnitude of
+                    data processing and removes the need to download and prepare
+                    large amounts of data for research and analysis.
+                    <br>
+                    <br>
+                    &emsp; USGS has already distributed this analysis ready data
+                    through the Spatial Temporal Asset Catalog (STAC).
+                    STAC is a standard for storing, discovering, and analyzing
+                    spatial-temporal data to describe various geospatial information.
+                    This provides for better indexing and discovering of the
+                    analysis ready data
+                    <br>
+                    <br>
+                    &emsp; In 2019, the USGS assigned an NAU capstone team to develop an
+                    interactive web map that has support for planetary data. The
+                    team that developed this new planetary web map called
+                    CartoCosmos. The CartoCosmos team developed a plugin extension
+                    for Leaflet, an open source Javascript library for
+                    interactive maps. This plugin extension was developed to
+                    support mapping of planetary data sets. The CartoCosmos web
+                    map is great for visualizing large planetary image mosaics,
+                    but has no support for visualizing these individual STAC
+                    assets or STAC catalogs.
+                  </p>
+                </p>
+            </div>
+            <div class = "md-layout-item md-size-50 md-xsmall-size-100
+            leaflet-picture img-frame">
+              <img src = "../assets/cartocosmos.png" class="leaflet-picture">
+            </div>
+          </div>
+        </div>
+        <div id = "solution" class = "detail-section" style="display:none;">
+          <div class = "md-layout" >
+            <br>
+            <br>
+            <br>
+            <br>
+            <div class="md-layout-item md-size-50 md-small-size-70 md-xsmall-size-100"
+            style="text-align:left;">
+            <p>
+            &emsp; To solve the problem of interacting with the USGS STAC catalog
+            within the CartoCosmos web map, the team will use the following
+            solutions:
+              <ul>
+                <li>
+                  Query the STAC API endpoint for a given planetary body and render
+                  the footprint information on the CartoCosmos web map.
+                </li>
+                <li>
+                  Implement a new feature in the CartoCosmos Leaflet web map to
+                  display footprints using simple polygons that overlay the existing
+                  planetary maps.
+                </li>
+                <li>
+                  Implement a frontend search functionality that queries information
+                  from the STAC API and displays the information of selected
+                  footprints.
+                </li>
+                <li>
+                  Render Cloud Optimized GeoTIFF (COG) images within CartoCosmos for
+                  viewing without the need to download large image data.
+                </li>
+              </ul>
+            </p>
+            </div>
+            <div class = "md-layout-item md-size-50 md-xsmall-size-100
+            leaflet-picture img-frame">
+              <img src = "../assets/solution.png" class="leaflet-picture">
+            </div>
+          </div>
+        </div>
+        <div id = "requirements" class = "detail-section"
+        style="display:none;">
+          <div class= "md-layout">
+            <br>
+            <br>
+            <div class="md-layout-item"
+            style="text-align:left;">
+            <br>
+                <p>
+                  <p class= "requirements-text">
+                    The team has discovered both functional and non-functional
+                    requirements through weekly
+                    <br>
+                    meetings with the USGS and doing
+                    research on there own. The requirements are listed below:
+                  </p>
+                  <center> <h3> <u> Domain Level: </u> </h3> </center>
+                  <p class= "requirements-text">
+                      - View an overlay of image footprints within the cartocosmos
+                      webmap.
+                      <br>
+                      - Query search for the loaded footprints.
+                      <br>
+                      - Display Cloud Optimized GeoTIFF images when selecting a
+                      footprints.
+                  </p>
+                  <br>
+                  <center> <h3> <u> Environmental: </u> </h3> </center>
+                  <p class= "requirements-text">
+                      - Building on existing Leaflet CartoCosmos Web Map.
+                    <br>
+                      - Utilizing The SpatioTemporal Asset Catalog (STAC) API
+                  </p>
+                  <br>
+                  <center> <h3> <u> Functional: </u> </h3> </center>
+                  <p class= "requirements-text">
+                      - Displaying image locations through polygons by use of
+                      STAC API dynamically
+                    <br>
+                      - Load Cloud Optimized GeoTIFF (COG) assets from a selected
+                       polygon
+                    <br>
+                      - Search assets utilizing the STAC API and displaying
+                      corresponding image locations.
+                  </p>
+                  <p class= "requirements-text">
+                    If you would like to read more in depth about the
+                    requirements for this project then check
+                    <br>
+                    the requirements document located here.
+                  </p>
+                  <br>
+                </p>
+            </div>
+          </div>
+        </div>
+        <div id = "technologies" class = "detail-section"
+        style="display:none;">
+          <div class = "md-layout">
+            <br>
+            <br>
+            <div class = "md-layout-item leaflet-picture img-frame">
+              <img src = "../assets/leaflet.png" class="leaflet-picture">
+            </div>
+            <br>
+            <br>
+            <div class = "md-layout-item leaflet-picture img-frame">
+              <img src = "../assets/javascript.png" class="leaflet-picture">
+            </div>
+          </div>
         </div>
       </div>
     </section>
@@ -105,9 +329,9 @@
     <!-- Third party plugin JS-->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.4.1/jquery.easing.min.js"></script>
     <!-- Contact form JS-->
-    <script src="assets/mail/jqBootstrapValidation.js"></script>
-    <script src="assets/mail/contact_me.js"></script>
+    <script src="../assets/mail/jqBootstrapValidation.js"></script>
+    <script src="../assets/mail/contact_me.js"></script>
     <!-- Core theme JS-->
-    <script src="js/scripts.js"></script>
+    <script src="../js/scripts.js"></script>
   </body>
 </html>

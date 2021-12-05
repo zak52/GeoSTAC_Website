@@ -18,31 +18,47 @@
         <div class="container">
           <img src="../assets/GeoSTAC_logo-removebg.png" style="height:3em; width:auto; padding-right: 1em;">
           <a class="navbar-brand js-scroll-trigger" href="../index.html">GEOSTAC</a>
-            <button class="navbar-toggler navbar-toggler-right font-weight-bold bg-primary text-white rounded" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">Menu <i class="fas fa-bars"></i></button>
+            <button class="navbar-toggler navbar-toggler-right font-weight-bold
+            bg-primary text-white rounded" type="button" data-toggle="collapse"
+            data-target="#navbarResponsive" aria-controls="navbarResponsive"
+            aria-expanded="false" aria-label="Toggle navigation">Menu <i class="fas fa-bars"></i></button>
             <div class="collapse navbar-collapse" id="navbarResponsive">
                 <ul class="navbar-nav ml-auto">
-                    <li class="nav-item mx-0 mx-lg-1"><a class="nav-link py-3 px-0 px-lg-3 rounded js-scroll-trigger" href="../index.html">HOME</a>
+                    <li class="nav-item mx-0 mx-lg-1"><a class="nav-link py-3
+                      px-0 px-lg-3 rounded js-scroll-trigger" href="../index.html">HOME</a>
                     </li>
-                    <li class="nav-item mx-0 mx-lg-1"><a class="nav-link py-3 px-0 px-lg-3 rounded js-scroll-trigger" href="about.html">ABOUT</a>
+                    <li class="nav-item mx-0 mx-lg-1"><a class="nav-link py-3
+                      px-0 px-lg-3 rounded js-scroll-trigger" href="about.html">ABOUT</a>
                     </li>
-                    <li class="nav-item mx-0 mx-lg-1"><a class="nav-link py-3 px-0 px-lg-3 rounded js-scroll-trigger" href="team.html">TEAM MEMBERS</a>
+                    <li class="nav-item mx-0 mx-lg-1"><a class="nav-link py-3
+                      px-0 px-lg-3 rounded js-scroll-trigger" href="team.html">TEAM MEMBERS</a>
                     </li>
-                    <li class="nav-item mx-0 mx-lg-1"><a class="nav-link py-3 px-0 px-lg-3 rounded js-scroll-trigger" href="document.html">DOCUMENTS</a>
+                    <li class="nav-item mx-0 mx-lg-1"><a class="nav-link py-3
+                      px-0 px-lg-3 rounded js-scroll-trigger" href="document.html">DOCUMENTS</a>
                     </li>
-                    <li class="nav-item mx-0 mx-lg-1"><a class="nav-link py-3 px-0 px-lg-3 rounded js-scroll-trigger" href="timeline.html">TIMELINE</a>
+                    <li class="nav-item mx-0 mx-lg-1"><a class="nav-link py-3
+                      px-0 px-lg-3 rounded js-scroll-trigger" href="timeline.html">TIMELINE</a>
                     </li>
-                    <li class="nav-item mx-0 mx-lg-1"><a class="nav-link py-3 px-0 px-lg-3 rounded js-scroll-trigger" href="https://github.com/GeoSTAC">GITHUB</a>
+                    <li class="nav-item mx-0 mx-lg-1"><a class="nav-link py-3
+                      px-0 px-lg-3 rounded js-scroll-trigger" href="https://github.com/GeoSTAC">GITHUB</a>
                     </li>
                 </ul>
             </div>
         </div>
     </nav>
 	<header class="masthead text-white text-center"
-      style="background:url('../assets/marsPlanet.jpg'); background-repeat: no-repeat; background-position: center; background-size: cover;>
+      style="background:url('../assets/Europa-Blue.jpg'); background-repeat:
+      no-repeat; background-position: center; background-size: cover;">
         <div class="container d-flex align-items-center flex-column">
-            <!-- Masthead Avatar Image--><img class="masthead-avatar mb-5" src="../assets/GeoSTAC_logo-removebg.png">
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
             <!-- Masthead Heading-->
-            <h1 class="masthead-heading mb-0">Documents</h1>
+            <h1 class="masthead-heading mb-0">Documents and Presentations</h1>
             <div class="divider-custom divider-light">
               <div class="divider-custom-line"></div>
               <div class="divider-custom-icon"><i class="fas fa-star"></i></div>
@@ -51,28 +67,157 @@
             <p class="pre-wrap masthead-subheading font-weight-light mb-0">Info on our Team, Workflow & Presentations</p>
         </div>
     </header>
-    <section class="page-section  text-black mb-0 bg-secondary" id="problem">
+    <section class="page-section  text-black mb-0 bg-secondary">
         <div style="margin: 0px auto; position: relative; overflow: hidden;
-        padding: 1em" >
+        padding: 1em">
           <div id="content">
             <div>
+            <center>
               <h2 class="overview">
-                Documents and Presentations
+                Documents
               </h2>
-              <p class="overview_paragraph">
-
-              </p>
-              <div class="document_container">
-                <iframe src="../documents/TeamInventory.pdf"
-                  style="width: 90%; height: 100em">
-                      <p>Your browser does not support iframes.</p>
-                </iframe>
+            </center>
+            <div class="divider-custom divider-secondary">
+              <div class="divider-custom-line"></div>
+            </div>
+            <center class="tab">
+              <div class = "bar-black text-center" style="font-size:.75em;">
+                <button class = "bar-item geo-button tabLink color-red"
+                onclick="openDocument(event, 'team-standards')">
+                Team Standards
+                </button>
+                <button class = "bar-item geo-button tabLink"
+                onclick="openDocument(event, 'team-inventory')">
+                Team Inventory
+                </button>
+                <button class = "bar-item geo-button tabLink"
+                onclick="openDocument(event, 'tech-feasibility')">
+                Tech Feasibility
+                </button>
+                <button class = "bar-item geo-button tabLink"
+                onclick="openDocument(event, 'requirements-doc')">
+                Requirements
+                </button>
+              </div>
+            </center>
+            <br>
+            <br>
+            <br>
+            <div id = "team-standards" class = "documents" style = "">
+              <div class = "md-layout">
+                <br>
+                <br>
+                <div class="md-layout-item"
+                style="text-align:center;">
                 <iframe src="../documents/TeamStandards.pdf"
-                  style="width: 90%; height: 1000px">
-                      <p>Your browser does not support iframes.</p>
+                style="width: 90%; height: 600px">
+                  <p>Your browser does not support iframes.</p>
                 </iframe>
+                </div>
               </div>
             </div>
+            <div id = "team-inventory" class = "documents" style="display:none;">
+              <div class = "md-layout" >
+                <br>
+                <br>
+                <br>
+                <br>
+                <div class="md-layout-item"
+                style="text-align:center;">
+                <div class="document_container">
+                <iframe src="../documents/TeamInventory.pdf"
+                  style="width: 90%; height: 600px">
+                      <p>Your browser does not support iframes.</p>
+                </iframe>
+                </div>
+              </div>
+            </div>
+          </div>
+            <div id = "tech-feasibility" class = "documents"
+            style="display:none;">
+              <div class= "md-layout">
+                <br>
+                <br>
+                <br>
+                <br>
+                <br>
+                <div class="md-layout-item"
+                style="text-align:center;">
+                <iframe src="../documents/techFeasibility.pdf"
+                  style="width: 90%; height: 600px">
+                      <p>Your browser does not support iframes.</p>
+                </iframe>
+                </div>
+              </div>
+            </div>
+            <div id = "requirements-doc" class = "documents"
+            style="display:none;">
+              <div class = "md-layout">
+                <br>
+                <br>
+                <div class="md-layout-item"
+                style="text-align:center;">
+                <iframe src="../documents/techFeasibility.pdf"
+                  style="width: 90%; height: 600px">
+                      <p>Your browser does not support iframes.</p>
+                </iframe>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div id="content">
+            <div>
+              <br>
+              <br>
+            <center>
+              <h2 class="overview">
+                Presentations
+              </h2>
+            </center>
+            <div class="divider-custom divider-secondary">
+              <div class="divider-custom-line"></div>
+            </div>
+            <center class="tab">
+              <div class = "bar-black text-center">
+                <button class = "bar-item geo-button tabLink color-red"
+                onclick="openPresentation(event, 'mini-intro')">
+                Mini Intro
+                </button>
+                <button class = "bar-item geo-button tabLink"
+                onclick="openPresentation(event, 'design-review')">
+                Design Review 1
+                </button>
+              </div>
+            </center>
+            <div id = "mini-intro" class = "presentations" style = "">
+              <div class = "md-layout">
+                <br>
+                <br>
+                <div class="md-layout-item"
+                style="text-align:center;">
+                <iframe src="../documents/Mini-Intro.pdf"
+                  style="width: 90%; height: 600px">
+                      <p>Your browser does not support iframes.</p>
+                </iframe>
+                </div>
+              </div>
+            </div>
+            <div id = "design-review" class = "presentations" style="display:none;">
+              <div class = "md-layout" >
+                <br>
+                <br>
+                <br>
+                <br>
+                <div class="md-layout-item"
+                style="text-align:center;">
+                <iframe src="../documents/Design-Review-I.pdf"
+                  style="width: 90%; height: 600px">
+                      <p>Your browser does not support iframes.</p>
+                </iframe>
+                </div>
+              </div>
+            </div>
+          </div>
         </div>
       </div>
     </section>
@@ -115,9 +260,9 @@
     <!-- Third party plugin JS-->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.4.1/jquery.easing.min.js"></script>
     <!-- Contact form JS-->
-    <script src="assets/mail/jqBootstrapValidation.js"></script>
-    <script src="assets/mail/contact_me.js"></script>
+    <script src="../assets/mail/jqBootstrapValidation.js"></script>
+    <script src="../assets/mail/contact_me.js"></script>
     <!-- Core theme JS-->
-    <script src="js/scripts.js"></script>
+    <script src="../js/scripts.js"></script>
   </body>
 </html>
